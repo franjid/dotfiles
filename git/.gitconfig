@@ -1,0 +1,50 @@
+[core]
+    editor = nano
+    excludesfile = ~/.gitignore
+[user]
+	name = Fran Iruela
+	email = franjid@gmail.com
+[alias]
+    st = status -s -b
+    co = checkout
+    cb = checkout -b
+    cpb = !"git rev-parse --abbrev-ref HEAD | pbcopy | echo 'Branch copied'; pbpaste"
+    pob = !"git rev-parse --abbrev-ref HEAD | pbcopy | git push origin"
+    cm = commit -m
+    b = branch
+    bs = for-each-ref --sort=-committerdate refs/heads/
+    df = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+    l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    ll = log --pretty=format:\"%Cred%h%Creset %C(green)%ad%Creset | %s%C(yellow)%d%Creset %C(bold blue)<%an>%Creset\" --graph --date=default
+    up = pull
+    upr = pull --rebase
+    p = push origin
+    abort = reset --hard HEAD
+    undo = reset HEAD~1
+    recommit = commit --amend
+    rem = remote -v
+    conflicts = diff --name-only --diff-filter=U
+    unstage = reset HEAD --
+    pending = log origin/master..HEAD
+    here = status .
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red
+    new = cyan
+
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
