@@ -1,9 +1,9 @@
 [core]
-    editor = nano
+    editor = vim
     excludesfile = ~/.gitignore
 [user]
-	name = Fran Iruela
-	email = franjid@gmail.com
+    name = Fran Iruela
+    email = franjid@gmail.com
 [alias]
     st = status -s -b
     co = checkout
