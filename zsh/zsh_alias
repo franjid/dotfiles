@@ -1,6 +1,6 @@
 
 # Useful aliases
-alias 'ls=ls -la --color'
+alias 'ls=ls -la'
 alias textedit='open -a TextEdit'
 alias dsclean='find . -type f -name .DS_Store -delete'
 alias flushdns='dscacheutil -flushcache'
