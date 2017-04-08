@@ -1,4 +1,7 @@
 
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
 # Useful aliases
 alias 'ls=ls -la -G'
 alias textedit='open -a TextEdit'
