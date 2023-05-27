@@ -3,7 +3,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Useful aliases
-alias 'ls=ls -la -G'
+alias 'ls=ls -la -G --color'
 alias textedit='open -a TextEdit'
 alias dsclean='find . -type f -name .DS_Store -delete'
 alias flushdns='dscacheutil -flushcache'
